@@ -1,14 +1,3 @@
-// run npm install
-
-// need to have a database
-// need to have user + password for that database
-// need to update ./database/database.js to use those user + pass + database names 
-
-// to seed the local database (After the above is completed)
-// you can run npm run seeder to populate initial db
-// to run
-// npm run start
-
 # Task Manager CLI Application
 
 ## Description
