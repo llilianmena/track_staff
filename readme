@@ -1,0 +1,71 @@
+// run npm install
+
+// need to have a database
+// need to have user + password for that database
+// need to update ./database/database.js to use those user + pass + database names 
+
+// to seed the local database (After the above is completed)
+// you can run npm run seeder to populate initial db
+// to run
+// npm run start
+
+# Task Manager CLI Application
+
+## Description
+This command-line application helps manage company departments, roles, and employees using a database. Users can view and manipulate the organization structure interactively.
+
+### GIVEN a command-line application that accepts user input
+
+- **WHEN I start the application**  
+  - THEN I am presented with the following options:  
+    - View all departments  
+    - View all roles  
+    - View all employees  
+    - Add a department  
+    - Add a role  
+    - Add an employee  
+    - Update an employee role  
+
+### Viewing Data
+
+- **WHEN I choose to view all departments**  
+  - THEN I am presented with a formatted table showing department names and department IDs.
+
+- **WHEN I choose to view all roles**  
+  - THEN I am presented with the job title, role ID, the department that role belongs to, and the salary for that role.
+
+- **WHEN I choose to view all employees**  
+  - THEN I am presented with a formatted table showing employee data, including:  
+    - Employee IDs  
+    - First names  
+    - Last names  
+    - Job titles  
+    - Departments  
+    - Salaries  
+    - Managers they report to  
+
+### Adding Data
+
+- **WHEN I choose to add a department**  
+  - THEN I am prompted to enter the name of the department, and that department is added to the database.
+
+- **WHEN I choose to add a role**  
+  - THEN I am prompted to enter:  
+    - The role name  
+    - The salary  
+    - The department the role belongs to  
+  - And that role is added to the database.
+
+- **WHEN I choose to add an employee**  
+  - THEN I am prompted to enter:  
+    - The employee’s first name  
+    - Last name  
+    - Role  
+    - Manager  
+  - And that employee is added to the database.
+
+### Updating Data
+
+- **WHEN I choose to update an employee role**  
+  - THEN I am prompted to select an employee to update and their new role.  
+  - The information is then updated in the database.
